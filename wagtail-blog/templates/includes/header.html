@@ -1,0 +1,65 @@
+{% load static %}
+<!-- Reference-style header (Gramosoft) -->
+<header>
+    <section id="homeHeader" class="position-fixed w-100 top-0 home-header d-lg-block d-none">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent position-relative py-3" aria-label="Main navigation">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="/">
+                    <img id="logo" src="{% static 'images/logo.svg' %}" alt="Logo" class="main" style="height:40px">
+                </a>
+
+                <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav ms-auto d-flex align-items-center">
+                        <li class="nav-item dropdown me-3">
+                            <button class="nav-link dropdown-toggle ff-primary fw-lb fs-d theme-secondary" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false">Services</button>
+                            <ul class="dropdown-menu menu-items-1 border-0">
+                                <li><a class="dropdown-item" target="_blank" href="#">Generative AI Development</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="#">Web Application Development</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="#">Mobile Application Development</a></li>
+                                <div class="dropdown-background"></div>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-3"><a class="nav-link" href="#">Industry</a></li>
+                        <li class="nav-item me-3"><a class="nav-link" href="#">Tech Stack</a></li>
+                        <li class="nav-item me-3"><a class="nav-link" href="#">Company</a></li>
+                        <li class="nav-item me-3"><a class="nav-link" href="#">Resources</a></li>
+                        <li class="nav-item me-3"><a class="nav-link" href="#">Free Tools</a></li>
+                    </ul>
+                    <a target="_blank" href="#" class="contact-btn ms-3">
+                        <button type="button" class="btn btn-primary">Contact Us</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Mobile header -->
+    <section id="homeHeaderMobile" class="position-fixed w-100 top-0 home-header d-lg-none d-block">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent position-relative py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="/">
+                    <img id="logo-mobile" src="{% static 'images/logo.svg' %}" alt="Logo" style="height:36px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header d-flex justify-content-between">
+                        <a class="navbar-brand"><img src="{% static 'images/logo.svg' %}" alt="Logo" style="height:36px"></a>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-lg-3">
+                            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Industry</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Tech Stack</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Company</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+</header>

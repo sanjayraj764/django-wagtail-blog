@@ -1,0 +1,40 @@
+{% extends 'layouts/blank.html' %}
+
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block class %}article bg-white{% endblock %}
+
+{% block content %} 
+
+<div class="mx-auto px-8 py-24">
+    <h1>{{ page.title }}</h1>
+    <a href="{% url 'profile' page.owner %}" class="flex items-center gap-1 mb-2">
+        <img class="h-8 w-8 rounded-full object-cover" src="{{ page.owner.profile.avatar }}" alt="Avatar">
+        {{ page.owner.profile.name }}
+    </a>
+    <p class="text-sm text-neutral-500">{{ page.date }}</p>
+    <p class="text-2xl font-serif italic text-neutral-800">{{ page.intro }}</p>
+
+    <div class="mb-8">
+        <figure>
+            {% image page.image original class="" %}
+        </figure>
+        
+        {% if page.caption %}
+        <figcaption class="text-sm text-neutral-500 text-center mt-2 mb-4">
+            {{ page.caption }}
+        </figcaption>
+        {% endif %}
+    </div>
+
+        <div class="blog-body mt-4">
+        {{ page.body|richtext }}
+    </div>
+        <div class="mt-4 inline-block">
+            <a href="{{ page.get_parent.url }}" class="underline">Return to blog</a>
+    </div>
+
+</div>
+
+
+{% endblock %}

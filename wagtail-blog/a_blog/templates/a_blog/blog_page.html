@@ -1,0 +1,71 @@
+{% extends 'layouts/blank.html' %}
+
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block class %}blog bg-white{% endblock %}
+
+{% block content %} 
+
+    <div class="max-w-[1600px] mx-auto px-8 py-24">
+
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.body|richtext }}</p>
+
+        <div class="grid mt-8 gap-12">
+            {% for article in articles %}
+            <article class="m-article-card post">
+                {% if article.specific.image %}
+                <div class="m-article-card__picture">
+                    <a class="m-article-card__picture-link" href="{% pageurl article %}">
+                        {% image article.specific.image max-800x600 class="m-article-card__picture-background" %}
+                    </a>
+                </div>
+                {% endif %}
+                <div class="m-article-card__info">
+                    <a class="m-article-card__info-link" href="{% pageurl article %}">
+                        <div>
+                            <h4 class="m-article-card__title">{{ article.title }}</h4>
+                            <p class="m-article-card__excerpt">{{ article.specific.intro }}</p>
+                        </div>
+                        <div class="m-article-card__timestamp">
+                            <span>{{ article.specific.date }}</span>
+                            <span class="dot">•</span>
+                            {% if article.specific.reading_time %}
+                            <span class="reading-time">{{ article.specific.reading_time }}</span>
+                            {% endif %}
+                        </div>
+                    </a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+
+        {% if is_paginated %}
+        <nav class="pagination" aria-label="Pagination">
+            <ul>
+                {% if page_obj.has_previous %}
+                <li class="prev"><a href="?page={{ page_obj.previous_page_number }}">&laquo; Prev</a></li>
+                {% else %}
+                <li class="prev disabled">&laquo; Prev</li>
+                {% endif %}
+
+                {% for num in paginator.page_range %}
+                    {% if page_obj.number == num %}
+                        <li class="active"><span>{{ num }}</span></li>
+                    {% else %}
+                        <li><a href="?page={{ num }}">{{ num }}</a></li>
+                    {% endif %}
+                {% endfor %}
+
+                {% if page_obj.has_next %}
+                <li class="next"><a href="?page={{ page_obj.next_page_number }}">Next &raquo;</a></li>
+                {% else %}
+                <li class="next disabled">Next &raquo;</li>
+                {% endif %}
+            </ul>
+        </nav>
+        {% endif %}
+
+    </div>
+
+{% endblock %}
