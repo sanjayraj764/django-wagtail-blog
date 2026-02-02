@@ -1,11 +1,4 @@
-Got it, Sanju 😄
-Here’s an **attractive, clean, professional README** you can directly copy-paste into **README.md** for your **Django + Wagtail Blog project**.
-(Simple language ✅ GitHub-ready ✅ Resume-friendly ✅)
-
----
-
-```md
-# 📝 Django Wagtail Blog Website
+Django Wagtail Blog Website
 
 A modern and fully functional **blog website** built using **Django** and **Wagtail CMS**.  
 This project demonstrates how to create, manage, and publish blog content using a powerful content management system.
