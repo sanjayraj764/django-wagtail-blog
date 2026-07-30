@@ -12,6 +12,7 @@ This project demonstrates how to create, manage, and publish blog content using 
 -  Image support for blog posts
 -  Clean and user-friendly UI
 -  Secure admin dashboard
+-  best for the blog and content creations for the websites in the companys or any organisation 
 -  Responsive design (mobile-friendly)
 
 ---
@@ -120,6 +121,22 @@ Open browser and visit:
 *  Improved UI design
 
 ---
+
+## Installation
+
+1. Clone the repository
+2. Create a virtual environment
+3. Install dependencies
+4. Run the development server
+
+## Technologies Used
+
+- Python
+- Django
+- Wagtail CMS
+- HTML
+- CSS
+- SQLite
 
 ## 👨‍💻 Author
 
