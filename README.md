@@ -5,18 +5,18 @@ This project demonstrates how to create, manage, and publish blog content using 
 
 ---
 
-## 🚀 Features
+##  Features
 
 - 📄 Create and manage blog posts using Wagtail Admin
-- ✍️ Rich text editor for content writing
-- 🖼️ Image support for blog posts
-- 🧭 Clean and user-friendly UI
-- 🔐 Secure admin dashboard
-- 📱 Responsive design (mobile-friendly)
+-  Rich text editor for content writing
+-  Image support for blog posts
+-  Clean and user-friendly UI
+-  Secure admin dashboard
+-  Responsive design (mobile-friendly)
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend:** Python, Django
 - **CMS:** Wagtail
@@ -26,7 +26,7 @@ This project demonstrates how to create, manage, and publish blog content using 
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 
@@ -42,23 +42,23 @@ django-wagtail-blog/
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 Follow these steps to run the project locally:
 
-### 1️⃣ Clone the repository
+### 1. Clone the repository
 ```bash
 git clone https://github.com/USERNAME/django-wagtail-blog.git
 cd django-wagtail-blog
 ````
 
-### 2️⃣ Create virtual environment
+### 2. Create virtual environment
 
 ```bash
 python -m venv venv
 ```
 
-### 3️⃣ Activate virtual environment
+### 3. Activate virtual environment
 
 **Windows**
 
@@ -72,25 +72,25 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### 4️⃣ Install dependencies
+### 4. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5️⃣ Run migrations
+### 5. Run migrations
 
 ```bash
 python manage.py migrate
 ```
 
-### 6️⃣ Create superuser
+### 6. Create superuser
 
 ```bash
 python manage.py createsuperuser
 ```
 
-### 7️⃣ Start development server
+### 7. Start development server
 
 ```bash
 python manage.py runserver
@@ -102,7 +102,7 @@ Open browser and visit:
 
 ---
 
-## 🎯 Purpose of This Project
+##  Purpose of This Project
 
 * To learn **Django + Wagtail CMS**
 * To understand **content management systems**
@@ -111,18 +111,18 @@ Open browser and visit:
 
 ---
 
-## 📌 Future Enhancements
+##  Future Enhancements
 
-* 🔍 Search functionality
-* 🏷️ Categories & tags
-* 💬 Comment system
-* 🌐 Deployment to cloud
-* 🎨 Improved UI design
+*  Search functionality
+*  Categories & tags
+*  Comment system
+*  Deployment to cloud
+*  Improved UI design
 
 ---
 
 ## 👨‍💻 Author
 
-**Sanju**
+**Sanjay Raj**
 Aspiring Full Stack / Backend Developer
-Built with ❤️ using Django & Wagtail
+Built using Django & Wagtail
