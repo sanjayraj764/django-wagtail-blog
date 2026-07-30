@@ -12,6 +12,7 @@ This project demonstrates how to create, manage, and publish blog content using 
 -  Image support for blog posts
 -  Clean and user-friendly UI
 -  Secure admin dashboard
+-  best for the blog and content creations for the websites in the companys or any organisation 
 -  Responsive design (mobile-friendly)
 
 ---
