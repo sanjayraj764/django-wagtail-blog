@@ -138,7 +138,7 @@ Open browser and visit:
 - CSS
 - SQLite
 
-## 👨‍💻 Author
+## Author
 
 **Sanjay Raj**
 Aspiring Full Stack / Backend Developer
